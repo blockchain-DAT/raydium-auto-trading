@@ -28,7 +28,7 @@ async function routeSwap() {
   const raydium = await initSdk()
   await raydium.fetchChainTime()
 
-  const inputAmount = '100'
+  const inputAmount = '0.001'
   const SOL = NATIVE_MINT // or WSOLMint
   const [inputMint, outputMint] = [SOL, USDCMint]
   const [inputMintStr, outputMintStr] = [inputMint.toBase58(), outputMint.toBase58()]
