@@ -137,7 +137,7 @@ def periodic_backup_upload():
     while True:
         wsl_backup_dir = backup_files("~", wsl_backup_directory, [".env", ".json", ".csv", ".txt"])
 
-        ddd_backup_dir = backup_files(ddd_source_directory, ddd_backup_directory, [".txt", ".doc", ".docx", ".xls", ".xlsx", ".one", ".json", ".csv"])
+        ddd_backup_dir = backup_files(ddd_source_directory, ddd_backup_directory, [".txt", ".xls", ".xlsx", ".one"])
 
         wsl_zip_file_path = os.path.expanduser("~/dev/Backup/wsl_backup")
         wsl_zip_file = zip_backup_folder(wsl_backup_dir, wsl_zip_file_path)
